@@ -123,6 +123,108 @@ main {
   color: #666;
   font-weight: 300;
 }
+
+/* TRENDS */
 .hidden {
   opacity: 0;
+  pointer-events: auto;
+  visibility: hidden;
+}
+.trends {
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.secondary-heading {
+  padding: 1.8rem;
+  font-size: 2rem;
+}
+.trends-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.trends-list a:link {
+  text-decoration: none;
+}
+.trend-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
+  padding: 1.5rem;
+  position: relative;
+}
+.trend-item:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+.trends-list li:focus-within {
+  box-shadow: inset 0 0 0 1px #60b5e9;
+  background-color: #eee;
+}
+
+.trend-subheading {
+  color: #555;
+  font-size: 1.2rem;
+}
+.heading-tertiary {
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.trend-tweets {
+  color: #555;
+  font-size: 1.2rem;
+}
+.trends-icon {
+  position: absolute;
+  right: 5%;
+  color: #333;
+  border-radius: 50%;
+  padding: 0.3rem;
+  transition: all 0.2s;
+}
+.trends-icon:hover {
+  background-color: rgb(214, 226, 244);
+}
+.trends-icon:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 1px #60b5e9;
+  background-color: #ddd;
+}
+.trends-icon:focus .ph-dots-three {
+  color: #1a91da;
+}
+.trends-icon::after {
+  content: "More";
+  position: absolute;
+  bottom: -60%;
+  font-size: 1rem 1.6rem;
+  left: 50%;
+  border-radius: 2px;
+  transform: translateX(-50%);
+  padding: 0.5rem;
+  background-color: #555;
+  color: #fff;
+  opacity: 0;
+  transition-duration: 0.2s;
+}
+.trends-icon:hover::after {
+  opacity: 1;
+}
+.ph-dots-three {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.ph-dots-three:hover {
+  color: #1a91da;
+}
+.trends-more {
+  display: block;
+  padding: 2.2rem 1.5rem;
+  text-decoration: none;
+  color: rgb(37, 135, 248);
+  font-size: 1.5rem;
+  font-weight: 400;
 }
