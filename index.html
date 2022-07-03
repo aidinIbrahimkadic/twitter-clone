@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Rubik:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <script src="https://unpkg.com/phosphor-icons"></script>
@@ -20,382 +20,338 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+    <div class="cookie hidden">
+      <div class="cookie-text-box">
+        <h3 class="cookie-heading">Did someone say ... cookies?</h3>
+        <p class="cookie-desc">
+          Twitter and its partners use cookies to provide you with a better, safer and faster service and to support our business. Some cookies are necessary to use our services, improve our services, and make sure they work properly. <a href="#" class="cookie-link">Show more about your choices.</a>
+        </p>
+      </div>
+      <div class="cookie-btn-box">
+        <button class="btn-cookie" data-btn-cookie="All">Accept all cookies</button>
+        <button class="btn-cookie" data-btn-cookie="Partial">Refuse non-essential  cookies</button>
+      </div>  
+    </div>  
+
     <div class="container">
-      <header class="main-header">
-        <div class="navigation">
-          <nav>
-            <a class="img-box" href="#"
-              ><img
-                class="img-logo"
-                src="img/twitter-logo.png"
-                alt="Twitter Logo"
-            /></a>
-            <ul class="nav-list">
-              <a class="nav-link" href="#"
-                  ><li class="nav-item">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="192"
-                    height="192"
-                    fill="#000000"
-                    viewBox="0 0 256 256"
-                  >
-                    <rect width="256" height="256" fill="none"></rect>
-                    <path
-                      d="M152,208V160a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v48a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V115.5a8.3,8.3,0,0,1,2.6-5.9l80-72.7a8,8,0,0,1,10.8,0l80,72.7a8.3,8.3,0,0,1,2.6,5.9V208a8,8,0,0,1-8,8H160A8,8,0,0,1,152,208Z"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="16"
-                    ></path>
-                  </svg>
-                  <span>Home</span>
-                  <h3 class="heading-tertiary"></h3>
-              </li></a
-              >
-              <a class="nav-link" href="#">
-              <li class="nav-item">
+        <header class="main-header ">
+          <div class="navigation">
+            <nav>
+              <a class="img-box" href="#"
+                ><img
+                  class="img-logo"
+                  src="img/twitter-logo.png"
+                  alt="Twitter Logo"
+              /></a>
+              <ul class="nav-list">
+                <a class="nav-link" href="#"
+                    ><li class="nav-item">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="192"
-                    height="192"
-                    fill="#000000"
-                    viewBox="0 0 256 256"
-                  >
-                    <rect width="256" height="256" fill="none"></rect>
-                    <line
-                      x1="43.6"
-                      y1="96"
-                      x2="224"
-                      y2="96"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="16"
-                    ></line>
-                    <line
-                      x1="176"
-                      y1="40"
-                      x2="144"
-                      y2="216"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="16"
-                    ></line>
-                    <line
-                      x1="112"
-                      y1="40"
-                      x2="80"
-                      y2="216"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="16"
-                    ></line>
-                    <line
-                      x1="32"
-                      y1="160"
-                      x2="212.4"
-                      y2="160"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="16"
-                    ></line></svg
-                  ><span>Explore</span>
-              </li></a
-              >
-              <a class="nav-link" href="#">
-              <li class="nav-item bell">
-                  <svg
-                  
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="192"
-                    height="192"
-                    fill="#000000"
-                    viewBox="0 0 256 256"
-                  >
-                    <rect width="256" height="256" fill="none"></rect>
-                    <path
-                      d="M56.2,104a71.9,71.9,0,0,1,72.3-72c39.6.3,71.3,33.2,71.3,72.9V112c0,35.8,7.5,56.6,14.1,68a8,8,0,0,1-6.9,12H49a8,8,0,0,1-6.9-12c6.6-11.4,14.1-32.2,14.1-68Z"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="16"
-                    ></path>
-                    <path
-                      d="M96,192v8a32,32,0,0,0,64,0v-8"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="16"
-                    ></path></svg
-                  ><span>Notifications</span>
-              </li>
-              </a>
-              <a class="nav-link" href="#">
-              <li class="nav-item">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="192"
-                    height="192"
-                    fill="#000000"
-                    viewBox="0 0 256 256"
-                  >
-                    <rect width="256" height="256" fill="none"></rect>
-                    <path
-                      d="M32,56H224a0,0,0,0,1,0,0V192a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V56A0,0,0,0,1,32,56Z"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="16"
-                    ></path>
-                    <polyline
-                      points="224 56 128 144 32 56"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="16"
-                    ></polyline></svg
-                  ><span>Messages</span>
-              </li>
-              </a>
-              <a class="nav-link" href="#">
-              <li class="nav-item">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="192"
-                    height="192"
-                    fill="#000000"
-                    viewBox="0 0 256 256"
-                  >
-                    <rect width="256" height="256" fill="none"></rect>
-                    <path
-                      d="M192,224l-64-40L64,224V48a8,8,0,0,1,8-8H184a8,8,0,0,1,8,8Z"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="16"
-                    ></path></svg
-                  ><span>Bookmarks</span>
-              </li>
-              </a>
-              <a class="nav-link" href="#">
-              <li class="nav-item">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="192"
-                    height="192"
-                    fill="#000000"
-                    viewBox="0 0 256 256"
-                  >
-                    <rect width="256" height="256" fill="none"></rect>
-                    <line
-                      x1="96"
-                      y1="152"
-                      x2="160"
-                      y2="152"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="16"
-                    ></line>
-                    <line
-                      x1="96"
-                      y1="120"
-                      x2="160"
-                      y2="120"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="16"
-                    ></line>
-                    <path
-                      d="M160,40h40a8,8,0,0,1,8,8V216a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V48a8,8,0,0,1,8-8H96"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="16"
-                    ></path>
-                    <path
-                      d="M88,72V64a40,40,0,0,1,80,0v8Z"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="16"
-                    ></path></svg
-                  ><span>Lists</span>
-              </li>
-              </a>
-              <a class="nav-link" href="#">
-              <li class="nav-item">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="192"
-                    height="192"
-                    fill="#000000"
-                    viewBox="0 0 256 256"
-                  >
-                    <rect width="256" height="256" fill="none"></rect>
-                    <circle
-                      cx="128"
-                      cy="96"
-                      r="64"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-miterlimit="10"
-                      stroke-width="16"
-                    ></circle>
-                    <path
-                      d="M31,216a112,112,0,0,1,194,0"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="16"
-                    ></path></svg
-                  ><span>Profile</span>
-              </li>
-              </a>
-              <a class="nav-link" href="#">
-              <li class="nav-item">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="192"
-                    height="192"
-                    fill="#000000"
-                    viewBox="0 0 256 256"
-                  >
-                    <rect width="256" height="256" fill="none"></rect>
-                    <circle
-                      cx="128"
-                      cy="128"
-                      r="96"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-miterlimit="10"
-                      stroke-width="16"
-                    ></circle>
-                    <circle cx="128" cy="128" r="12"></circle>
-                    <circle cx="176" cy="128" r="12"></circle>
-                    <circle cx="80" cy="128" r="12"></circle></svg
-                  ><span>More</span>
-              </li>
-              </a>
-            </ul>
-          </nav>
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="192"
+                      height="192"
+                      fill="#000000"
+                      viewBox="0 0 256 256"
+                    >
+                      <rect width="256" height="256" fill="none"></rect>
+                      <path
+                        d="M152,208V160a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v48a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V115.5a8.3,8.3,0,0,1,2.6-5.9l80-72.7a8,8,0,0,1,10.8,0l80,72.7a8.3,8.3,0,0,1,2.6,5.9V208a8,8,0,0,1-8,8H160A8,8,0,0,1,152,208Z"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></path>
+                    </svg>
+                    <span>Home</span>
+                    <h3 class="heading-tertiary"></h3>
+                </li></a
+                >
+                <a class="nav-link" href="#">
+                <li class="nav-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="192"
+                      height="192"
+                      fill="#000000"
+                      viewBox="0 0 256 256"
+                    >
+                      <rect width="256" height="256" fill="none"></rect>
+                      <line
+                        x1="43.6"
+                        y1="96"
+                        x2="224"
+                        y2="96"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></line>
+                      <line
+                        x1="176"
+                        y1="40"
+                        x2="144"
+                        y2="216"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></line>
+                      <line
+                        x1="112"
+                        y1="40"
+                        x2="80"
+                        y2="216"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></line>
+                      <line
+                        x1="32"
+                        y1="160"
+                        x2="212.4"
+                        y2="160"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></line></svg
+                    ><span>Explore</span>
+                </li></a
+                >
+                <a class="nav-link" href="#">
+                <li class="nav-item bell">
+                    <svg
+                    
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="192"
+                      height="192"
+                      fill="#000000"
+                      viewBox="0 0 256 256"
+                    >
+                      <rect width="256" height="256" fill="none"></rect>
+                      <path
+                        d="M56.2,104a71.9,71.9,0,0,1,72.3-72c39.6.3,71.3,33.2,71.3,72.9V112c0,35.8,7.5,56.6,14.1,68a8,8,0,0,1-6.9,12H49a8,8,0,0,1-6.9-12c6.6-11.4,14.1-32.2,14.1-68Z"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></path>
+                      <path
+                        d="M96,192v8a32,32,0,0,0,64,0v-8"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></path></svg
+                    ><span>Notifications</span>
+                </li>
+                </a>
+                <a class="nav-link" href="#">
+                <li class="nav-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="192"
+                      height="192"
+                      fill="#000000"
+                      viewBox="0 0 256 256"
+                    >
+                      <rect width="256" height="256" fill="none"></rect>
+                      <path
+                        d="M32,56H224a0,0,0,0,1,0,0V192a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V56A0,0,0,0,1,32,56Z"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></path>
+                      <polyline
+                        points="224 56 128 144 32 56"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></polyline></svg
+                    ><span>Messages</span>
+                </li>
+                </a>
+                <a class="nav-link" href="#">
+                <li class="nav-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="192"
+                      height="192"
+                      fill="#000000"
+                      viewBox="0 0 256 256"
+                    >
+                      <rect width="256" height="256" fill="none"></rect>
+                      <path
+                        d="M192,224l-64-40L64,224V48a8,8,0,0,1,8-8H184a8,8,0,0,1,8,8Z"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></path></svg
+                    ><span>Bookmarks</span>
+                </li>
+                </a>
+                <a class="nav-link" href="#">
+                <li class="nav-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="192"
+                      height="192"
+                      fill="#000000"
+                      viewBox="0 0 256 256"
+                    >
+                      <rect width="256" height="256" fill="none"></rect>
+                      <line
+                        x1="96"
+                        y1="152"
+                        x2="160"
+                        y2="152"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></line>
+                      <line
+                        x1="96"
+                        y1="120"
+                        x2="160"
+                        y2="120"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></line>
+                      <path
+                        d="M160,40h40a8,8,0,0,1,8,8V216a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V48a8,8,0,0,1,8-8H96"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></path>
+                      <path
+                        d="M88,72V64a40,40,0,0,1,80,0v8Z"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></path></svg
+                    ><span>Lists</span>
+                </li>
+                </a>
+                <a class="nav-link" href="#">
+                <li class="nav-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="192"
+                      height="192"
+                      fill="#000000"
+                      viewBox="0 0 256 256"
+                    >
+                      <rect width="256" height="256" fill="none"></rect>
+                      <circle
+                        cx="128"
+                        cy="96"
+                        r="64"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-miterlimit="10"
+                        stroke-width="16"
+                      ></circle>
+                      <path
+                        d="M31,216a112,112,0,0,1,194,0"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></path></svg
+                    ><span>Profile</span>
+                </li>
+                </a>
+                <a class="nav-link" href="#">
+                <li class="nav-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="192"
+                      height="192"
+                      fill="#000000"
+                      viewBox="0 0 256 256"
+                    >
+                      <rect width="256" height="256" fill="none"></rect>
+                      <circle
+                        cx="128"
+                        cy="128"
+                        r="96"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-miterlimit="10"
+                        stroke-width="16"
+                      ></circle>
+                      <circle cx="128" cy="128" r="12"></circle>
+                      <circle cx="176" cy="128" r="12"></circle>
+                      <circle cx="80" cy="128" r="12"></circle></svg
+                    ><span>More</span>
+                </li>
+                </a>
+              </ul>
+            </nav>
 
-          <button class="btn-primary">Tweet</button>
-        </div>
-        <div class="profile-box ">
-          <a class="nav-link" href="#"
-            >
-            <div class="nav-item">
-
-            <img
-              src="https://abs.twimg.com/sticky/default_profile_images/default_profile_bigger.png"
-              alt="John Doe"
-              class="profile-img"
-            />
-            <div class="profile-info">
-              <span class="profile-name">Branimir Bošnjak</span>
-              <span class="profile-user""">@BranimirBošnjak</span>
-            </div>
-            <svg class="profile-more"
-              xmlns="http://www.w3.org/2000/svg"
-              width="192"
-              height="192"
-              fill="#000000"
-              viewBox="0 0 256 256"
-            >
-              <rect width="256" height="256" fill="none"></rect>
-              <circle cx="128" cy="128" r="12"></circle>
-              <circle cx="192" cy="128" r="12"></circle>
-              <circle cx="64" cy="128" r="12"></circle>
-            </svg>
+            <button class="btn-primary">Tweet</button>
           </div>
-          </a>
-        </div>
-      </header>
+          <div class="profile-box ">
+            <a class="nav-link" href="#"
+              >
+              <div class="nav-item">
+
+              <img
+                src="https://abs.twimg.com/sticky/default_profile_images/default_profile_bigger.png"
+                alt="John Doe"
+                class="profile-img"
+              />
+              <div class="profile-info">
+                <span class="profile-name">Branimir Bošnjak</span>
+                <span class="profile-user">@BranimirBošnjak</span>
+              </div>
+              <svg class="profile-more"
+                xmlns="http://www.w3.org/2000/svg"
+                width="192"
+                height="192"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <circle cx="128" cy="128" r="12"></circle>
+                <circle cx="192" cy="128" r="12"></circle>
+                <circle cx="64" cy="128" r="12"></circle>
+              </svg>
+            </div>
+            </a>
+          </div>
+        </header>
+
       <main>
+       
         <header>
           <h2>Home</h2>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="192"
-            height="192"
-            fill="#000000"
-            viewBox="0 0 256 256"
-          >
-            <rect width="256" height="256" fill="none"></rect>
-            <path
-              d="M138.7,175.5l-19.2,52.1a8,8,0,0,1-15,0L85.3,175.5a8.1,8.1,0,0,0-4.8-4.8L28.4,151.5a8,8,0,0,1,0-15l52.1-19.2a8.1,8.1,0,0,0,4.8-4.8l19.2-52.1a8,8,0,0,1,15,0l19.2,52.1a8.1,8.1,0,0,0,4.8,4.8l52.1,19.2a8,8,0,0,1,0,15l-52.1,19.2A8.1,8.1,0,0,0,138.7,175.5Z"
-              fill="none"
-              stroke="#000000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-            ></path>
-            <line
-              x1="176"
-              y1="16"
-              x2="176"
-              y2="64"
-              fill="none"
-              stroke="#000000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-            ></line>
-            <line
-              x1="200"
-              y1="40"
-              x2="152"
-              y2="40"
-              fill="none"
-              stroke="#000000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-            ></line>
-            <line
-              x1="224"
-              y1="72"
-              x2="224"
-              y2="104"
-              fill="none"
-              stroke="#000000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-            ></line>
-            <line
-              x1="240"
-              y1="88"
-              x2="208"
-              y2="88"
-              fill="none"
-              stroke="#000000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-            ></line>
-          </svg>
+          <i class="ph-sparkle"></i>
         </header>
         <div class="new-tweet">
           <a href="#">
@@ -411,29 +367,33 @@
         </div>
       </main>
       <aside class="right-side">
-        <header class="header sticky">
-          <form action="">
-            <div class="search-box ">
-              <ion-icon class="search-icon" name="search-outline"></ion-icon>
-              <input type="text" placeholder="Search Twitter" class="search">
+        <div class="sticky">
+          <header class="header">
+            <form action="">
+              <div class="search-box">
+                <ion-icon class="search-icon" name="search-outline"></ion-icon>
+                <input type="text" placeholder="Search Twitter" class="search">
+                <button class="searchClose">X</button>
+              </div>
+            </form>
+            <div class="search-options hidden">
+              <span class="search-desc ">Try searching for people, topics, or keywords</span>
             </div>
-          </form>
-          <div class="search-options hidden">
-            <span class="search-desc ">Try searching for people, topics, or keywords</span>
-          </div>
-        </header>
-        <div class="trends">
+          </header>
+        </div>
+        
+        <div class="right-box trend-box">
           <h2 class="secondary-heading">Trends for you</h2>
-          <ul class="trends-list">
+          <ul class="right-list">
             <li><div class="trend-item">
-              <a href="#" class="trends-icon"><i class="ph-dots-three"></i></a>
+              <a href="#Politics" class="trends-icon"><i class="ph-dots-three"></i></a>
               <span class="trend-subheading">
                 Politics - Trending
               </span>
               <h3 class="heading-tertiary">Peter Thiel</h3>
             </div></li>
             <li><div class="trend-item">
-              <a href="#" class="trends-icon"><i class="ph-dots-three"></i></a>
+              <a href="#TrendingBiH1" class="trends-icon"><i class="ph-dots-three"></i></a>
               <span class="trend-subheading">
                 Trending in Bosnia&Hezegovina
               </span>
@@ -441,7 +401,7 @@
               <span class="trend-tweets">1,088 Tweets</span>
             </div></li>
             <li><div class="trend-item">
-              <a href="#" class="trends-icon"><i class="ph-dots-three"></i></a>
+              <a href="#TrendingBiH2" class="trends-icon"><i class="ph-dots-three"></i></a>
               <span class="trend-subheading">
                 Trending in Bosnia&Hezegovina
               </span>
@@ -449,7 +409,7 @@
               <span class="trend-tweets">35.9K Tweets</span>
             </div></li>
             <li><div class="trend-item">
-              <a href="#" class="trends-icon"><i class="ph-dots-three"></i></a>
+              <a href="#TrendingBiH3" class="trends-icon"><i class="ph-dots-three"></i></a>
               <span class="trend-subheading">
                 Trending in Bosnia&Hezegovina
               </span>
@@ -457,14 +417,14 @@
               <span class="trend-tweets">4,416 Tweets</span>
             </div></li>
             <li><div class="trend-item">
-              <a href="#" class="trends-icon"><i class="ph-dots-three"></i></a>
+              <a href="#Travel" class="trends-icon"><i class="ph-dots-three"></i></a>
               <span class="trend-subheading">
                 Travel - Trending
               </span>
               <h3 class="heading-tertiary">#Ukraine</h3>
             </div></li>
             <li><div class="trend-item">
-              <a href="#" class="trends-icon"><i class="ph-dots-three"></i></a>
+              <a href="#TrendingBiH4" class="trends-icon"><i class="ph-dots-three"></i></a>
               <span class="trend-subheading">
                 Trending in Bosnia&Hezegovina
               </span>
@@ -472,7 +432,7 @@
               <span class="trend-tweets">1,220 Tweets</span>
             </div></li>
             <li><div class="trend-item">
-              <a href="#" class="trends-icon"><i class="ph-dots-three"></i></a>
+              <a href="#TrendingBiH5" class="trends-icon"><i class="ph-dots-three"></i></a>
               <span class="trend-subheading">
                 Trending in Bosnia&Hezegovina
               </span>
@@ -480,18 +440,118 @@
               <span class="trend-tweets">20.1K Tweets</span>
             </div></li>
             <li><div class="trend-item">
-              <a href="#" class="trends-icon"><i class="ph-dots-three"></i></a>
+              <a href="#TrendingUkraine" class="trends-icon"><i class="ph-dots-three"></i></a>
               <span class="trend-subheading">
-                Trending in Bosnia&Hezegovina
+                Trending in Ukraine
               </span>
               <h3 class="heading-tertiary">Cheeto</h3>
               <span class="trend-tweets">3,336 Tweets</span>
             </div></li>
           </ul>
+          
           <a href="#" class="trend-item trends-more">Show more</a>
         </div>
-        <div class="follow">follow</div>
-        <footer>link</footer>
+        
+        <div class="right-box">
+          <h2 class="secondary-heading">Who to follow</h2>
+          <ul class="right-list follow-list">
+            
+            <li>
+              <div class="trend-item follow-item">
+                <div class="follow-box" data-follow-user="Intel" data-user-desc="Brings you closer to what you love." data-user-following="154" data-user-followers="57.2K">
+                  <div class="follow-img img-link">
+                    <img class="img-width follow-img" src="img/intel.jpg" alt="Intel logo">
+                  </div>
+                  <div class="follow-content">
+                    <div class="follow-text-box">
+                      <div class="follow-header">
+
+                        <h3 class="heading-tertiary follow-heading">Intel Software</h3>
+                        <i class="ph-star-fill"></i>
+                      </div>
+                      <div class="follow-subheading">@IntelSoftware</div>
+                    </div>
+                    <button data-user-following="false"  class="btn  btn-follow btn-follow-help">
+                      Follow
+                    </button>
+                  </div>
+                </div>
+                <div class="follow-additional-info">
+                  <div class="img-width"></div>
+                  <div class="follow-promoted">
+                    <i class="ph-arrow-square-up-right-fill"></i>  
+                    <h4 class="heading-quaternary">Promoted</h4>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="trend-item follow-item">
+                <div class="follow-box" data-follow-user="NBC"
+                data-user-desc="Breaking news alerts and updates from the BBC. For news, features, analysis follow @BBCWorld (international) or @BBCNews (UK). Latest sport news @BBCSport" data-user-following="3" data-user-followers="50.2K">
+                  <div class="follow-img img-link">
+                    <img class="img-width follow-img" src="img/news.jpg" alt="News logo">
+                  </div>
+                  <div class="follow-content">
+                    <div class="follow-text-box">
+                      <div class="follow-header">
+
+                        <h3 class="heading-tertiary follow-heading">NBC News</h3>
+                        <i class="ph-star-fill"></i>
+                      </div>
+                      <div class="follow-subheading">@NBCNews</div>
+                    </div>
+                    <button data-user-following="false"  class="btn btn-follow btn-follow-help">
+                      Follow
+                    </button>
+                  </div>
+                </div>
+                
+              </div>
+            </li>
+            <li>
+              
+              <div class="trend-item follow-item">
+                <div class="follow-box" data-follow-user="Reuters" data-user-desc="Integrate digital and power electronics technologies, develop clean power, enable energy digitalization to drive energy revolution for a better, greener future" data-user-following="384" data-user-followers="22.7K">
+                  <div class="follow-img img-link">
+                    <img class="img-width follow-img" src="img/reuters.jpg" alt="Reuters logo">
+                  </div>
+                  <div class="follow-content">
+                    <div class="follow-text-box">
+                      <div class="follow-header">
+
+                        <h3 class="heading-tertiary follow-heading">Reuters</h3>
+                        <i class="ph-star-fill"></i>
+                      </div>
+                      <div class="follow-subheading">@Reuters</div>
+                    </div>
+                    <button data-user-following="false" class="btn btn-follow btn-follow-help">
+                      Follow
+                    </button>
+                  </div>
+                </div>
+               
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="trend-item trends-more">Show more</a>
+        </div>
+
+        <footer>
+          <div class="footer-links">
+
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Ads info</a>
+            <a href="#more">More</a>
+          </div>
+          <span class="copyright">
+            &copy 2022 Twitter, Inc.
+          </span>
+
+        </footer>
       </aside>
     </div>
   </body>
